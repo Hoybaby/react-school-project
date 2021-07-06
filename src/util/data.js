@@ -2,7 +2,7 @@ const apiKey = process.env.REACT_APP_CLIENT_APIKEY
 
 // https://api.data.gov/ed/collegescorecard/v1/schools/?school.operating=1&amp;id=240444&amp;api_key={YOUR_API_KEY}
 
-function searchWeather(searchValue) {
+function searchSchool() {
 
     $.ajax({
         type: "GET",
@@ -12,8 +12,10 @@ function searchWeather(searchValue) {
         // success: function
     }).then(function(data) {
         console.log(data);
-        //create a history link for the search(Look up.push())
         
         }
-    // searchUV()
     )}; ;
+
+searchSchool();
+
+export default searchSchool;
