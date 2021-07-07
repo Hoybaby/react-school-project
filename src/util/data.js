@@ -6,16 +6,15 @@ function searchSchool() {
 
     $.ajax({
         type: "GET",
-        url: `https://api.data.gov/ed/collegescorecard/v1/schools/?school.operating=1&amp;id=240444&amp;api_key=${apiKey}`,
-        // my key "e8bb5a6ba8f08e6e176eb848cae16ef7"
+        url: `api.data.gov/ed/collegescorecard/v1/schools?api_key=${apiKey}`,
         dataType: "json",
         // success: function
     }).then(function(data) {
         console.log(data);
         
         }
-    )}; ;
+    )}; 
 
 searchSchool();
 
-export default searchSchool;
+export default searchSchool
