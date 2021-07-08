@@ -29,13 +29,17 @@ class App extends React.Component {
 
   }
   
+
   render() {
-  
+  // console.log('test')
       return (
+      
       <div className="App">
         <h1>Education Analytics Project</h1>
         {this.state.school.school? <p>{this.state.school.school.name}</p> : <p> No School yet</p>}
-        {this.state.school.school? <p>{this.state.school.school.school_url}</p> : <p> No School yet</p>}
+        {this.state.school.school? <p>{this.state.school.school.school_url}</p> : <p> No School Url</p>}
+        {/* {this.state.school.school? <p>{this.state.school.school.school_url}</p> : <p> No School Url</p>} */}
+        {this.state.school.school? <p>{this.state.school.school.city}, Wisconsin</p> : <p> No School City</p>}
 
         {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
