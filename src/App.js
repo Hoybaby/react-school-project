@@ -1,13 +1,42 @@
 import logo from './logo.svg';
 import './App.css';
-import React from 'react'
+import React, {useState} from 'react'
 import FetchApi from './components/FetchApi/FetchApi';
 
 
 class App extends React.Component {
+  state= {
+    // loading: true,
+    school: ''
+  }
+
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     items: [],
+  //     isLoaded: false,
+  //   }
+  // }
+
+  async componentDidMount() {
+      const url = `https://api.data.gov/ed/collegescorecard/v1/schools/?school.operating=1&id=240444&api_key=${process.env.REACT_APP_CLIENT_APIKEY}`
+      const response = await fetch(url);
+
+      const data = await response.json();
+      console.log(data)
+      this.setState({school: data.results[0]})
+
+
+  }
+  
   render() {
-    return (
+  
+      return (
       <div className="App">
+        <h1>Education Analytics Project</h1>
+        {this.state.school.school? <p>{this.state.school.school.name}</p> : <p> No School yet</p>}
+        {this.state.school.school? <p>{this.state.school.school.school_url}</p> : <p> No School yet</p>}
+
         {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
@@ -22,11 +51,13 @@ class App extends React.Component {
             Learn React
           </a>
         </header> */}
-        <FetchApi/>
+        {/* <FetchApi/> */}
       </div>
       );
     }
   }
+    
+
   
 
 export default App;
