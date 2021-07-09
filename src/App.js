@@ -1,12 +1,49 @@
 import logo from './logo.svg';
 import './App.css';
-import React from 'react'
+import React, { useState } from 'react'
+import FetchApi from './components/FetchApi/FetchApi';
+import Jumbo from './components/Jumbotron/Jumbotron';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 class App extends React.Component {
+  state = {
+    // loading: true,
+    school: ''
+  }
+
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     items: [],
+  //     isLoaded: false,
+  //   }
+  // }
+
+  async componentDidMount() {
+    const url = `https://api.data.gov/ed/collegescorecard/v1/schools/?school.operating=1&id=240444&api_key=${process.env.REACT_APP_CLIENT_APIKEY}`
+    const response = await fetch(url);
+
+    const data = await response.json();
+    console.log(data)
+    this.setState({ school: data.results[0] })
+
+
+  }
+
+
   render() {
+    // console.log('test')
     return (
+
       <div className="App">
-        <header className="App-header">
+        <Jumbo/>
+        {this.state.school.school ? <p>{this.state.school.school.name}</p> : <p> No School yet</p>}
+        {this.state.school.school ? <p>{this.state.school.school.school_url}</p> : <p> No School Url</p>}
+        {this.state.school.school ? <p>{this.state.school.school.city}, {this.state.school.school.state}</p> : <p> No School City</p>}
+        {this.state.school.school ? <p>{this.state.school.school.zip}</p> : <p> No School Url</p>}
+        {this.state.school.school ? <p>{this.state.school.latest.student.size}</p> : <p>Student Size Loading</p>}
+        {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
@@ -19,11 +56,14 @@ class App extends React.Component {
           >
             Learn React
           </a>
-        </header>
+        </header> */}
+        {/* <FetchApi/> */}
       </div>
-      );
-    }
+    );
   }
-  
+}
+
+
+
 
 export default App;
