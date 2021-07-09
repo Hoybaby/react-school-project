@@ -3,7 +3,7 @@ import './App.css';
 import React, { useState } from 'react'
 import FetchApi from './components/FetchApi/FetchApi';
 import Jumbo from './components/Jumbotron/Jumbotron';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class App extends React.Component {
