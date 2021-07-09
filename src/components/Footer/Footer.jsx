@@ -8,6 +8,7 @@ const Footer = () => {
                 <div className="row">
                     {/* column 1 */}
                     <div className="col">
+                        <h4></h4>
                         
                     </div>
                     {/* column 2 */}
