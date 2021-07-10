@@ -4,6 +4,8 @@ import React, { useState } from 'react'
 import FetchApi from './components/FetchApi/FetchApi';
 import Jumbo from './components/Jumbotron/Jumbotron';
 import Footer from './components/Footer/Footer';
+import Slides from './components/Carousel/Carousel';
+
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -39,11 +41,13 @@ class App extends React.Component {
 
       <div className="App">
         <Jumbo/>
+        
         {this.state.school.school ? <p>{this.state.school.school.name}</p> : <p> No School yet</p>}
         {this.state.school.school ? <p>{this.state.school.school.school_url}</p> : <p> No School Url</p>}
         {this.state.school.school ? <p>{this.state.school.school.city}, {this.state.school.school.state}</p> : <p> No School City</p>}
         {this.state.school.school ? <p>{this.state.school.school.zip}</p> : <p> No School Url</p>}
         {this.state.school.school ? <p>{this.state.school.latest.student.size}</p> : <p>Student Size Loading</p>}
+        <Slides/>
         {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
@@ -58,7 +62,7 @@ class App extends React.Component {
             Learn React
           </a>
         </header> */}
-        {/* <FetchApi/> */}
+        
         <Footer/>
       </div>
     );
