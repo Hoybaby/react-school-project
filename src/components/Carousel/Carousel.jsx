@@ -1,5 +1,6 @@
 import React from 'react'
 import { Carousel } from 'react-bootstrap'
+import './Carousel.css'
 
 class Slides extends React.Component {
     render() {
@@ -8,35 +9,35 @@ class Slides extends React.Component {
                 <Carousel>
                     <Carousel.Item interval={2000}>
                         <img
-                            className="d-block w-100"
-                            src="holder.js/800x400?text=First slide&bg=373940"
+                            className="d-block w-100 h-50"
+                            src="https://i.ytimg.com/vi/XEcRj605m2U/maxresdefault.jpg"
                             alt="First slide"
                         />
                         <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            <h3 className='slide-color'>First slide label</h3>
+                            <p className='slide-color'>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
                         <img
-                            className="d-block w-100"
-                            src="holder.js/800x400?text=Second slide&bg=282c34"
+                            className="d-block w-100 h-50"
+                            src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2017_41/2186311/171011-university-of-wisconsin-madison-2-ew-503p.jpg"
                             alt="Second slide"
                         />
                         <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3 className='slide-color'>Second slide label</h3>
+                            <p className='slide-color'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
-                            className="d-block w-100"
-                            src="holder.js/800x400?text=Third slide&bg=20232a"
+                            className="d-block w-100 h-50"
+                            src="https://chancellor.wisc.edu/content/uploads/2018/08/Bucky_Parade_unveil18_7137.jpg"
                             alt="Third slide"
                         />
                         <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <h3 className='slide-color'>Third slide label</h3>
+                            <p className='slide-color'>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
