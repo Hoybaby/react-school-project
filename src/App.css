@@ -1,6 +1,8 @@
 .App {
   text-align: center;
-  background-color: darkgray;
+  background-color: rgb(228, 222, 222);
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -13,6 +15,8 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+
 
 .App-header {
   background-color: #282c34;

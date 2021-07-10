@@ -1,8 +1,16 @@
-.carousel {
-    width:900px;
+
+@media screen and (min-width: 992px ){
+    .carousel {
+    width:900px; 
     height:500px;
     margin: auto;
+    }
 }
+
+
+/* .slide-color { */
+
+
 
 /* p {
     color: rgb(218, 94, 87);

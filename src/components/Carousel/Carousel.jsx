@@ -10,12 +10,12 @@ class Slides extends React.Component {
                     <Carousel.Item interval={2000}>
                         <img
                             className="d-block w-100 h-50"
-                            src="https://i.ytimg.com/vi/XEcRj605m2U/maxresdefault.jpg"
-                            alt="First slide"
+                            src="https://news.wisc.edu/content/uploads/2018/11/Aerial_Madison18_0102-1-1.jpg"
+                            alt="First slide, Ariel View"
                         />
                         <Carousel.Caption>
-                            <h3 className='slide-color'>First slide label</h3>
-                            <p className='slide-color'>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            <h3 className='slide-color'>Ariel View of the campus  </h3>
+                            {/* <p className='slide-color'>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item interval={1000}>
@@ -26,7 +26,7 @@ class Slides extends React.Component {
                         />
                         <Carousel.Caption>
                             <h3 className='slide-color'>Second slide label</h3>
-                            <p className='slide-color'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            {/* <p className='slide-color'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -36,8 +36,8 @@ class Slides extends React.Component {
                             alt="Third slide"
                         />
                         <Carousel.Caption>
-                            <h3 className='slide-color'>Third slide label</h3>
-                            <p className='slide-color'>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <h3 className='slide-color'>The Wisonsin Bucky Badger</h3>
+                            {/* <p className='slide-color'>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> */}
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
