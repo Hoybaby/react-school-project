@@ -66,6 +66,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 ### Packages to Install
     npm install react-bootstrap bootstrap@4.6.0
 
+    npm install --save react-chartjs-2 chart.js
+
     
 
 ### Deployment

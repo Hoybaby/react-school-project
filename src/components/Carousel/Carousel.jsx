@@ -3,7 +3,9 @@ import { Carousel } from 'react-bootstrap'
 import './Carousel.css'
 
 class Slides extends React.Component {
+
     render() {
+        
         return (
             <div>
                 <Carousel>
@@ -41,7 +43,7 @@ class Slides extends React.Component {
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
-
+                
             </div>
         )
     }
