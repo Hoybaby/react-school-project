@@ -6,6 +6,7 @@ import Jumbo from './components/Jumbotron/Jumbotron';
 import Footer from './components/Footer/Footer';
 import Slides from './components/Carousel/Carousel';
 import Body from './components/Body/Body';
+import DoughnutChart from './components/DoughnutChart/DoughnutChart';
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -21,6 +22,7 @@ class App extends React.Component {
       <div className="App">
         <Jumbo/>
         <Slides/>
+        <DoughnutChart/>
         <Body/>
         <Footer/>
       </div>
