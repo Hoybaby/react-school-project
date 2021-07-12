@@ -12,7 +12,20 @@ import DoughnutChart from './components/DoughnutChart/DoughnutChart';
 
 
 class App extends React.Component {
+
+  state = {
+    // loading: true,
+        school: ''
+    }
   
+  async componentDidMount() {
+    const url = `https://api.data.gov/ed/collegescorecard/v1/schools/?school.operating=1&id=240444&api_key=${process.env.REACT_APP_CLIENT_APIKEY}`
+    const response = await fetch(url);
+
+    const data = await response.json();
+    console.log(data)
+    this.setState({ school: data.results[0] })
+}
 
 
   render() {
@@ -22,8 +35,12 @@ class App extends React.Component {
       <div className="App">
         <Jumbo/>
         <Slides/>
+<<<<<<< HEAD
         <DoughnutChart/>
         <Body/>
+=======
+        <Body schoolInfo={this.state.school.school}/>
+>>>>>>> a28e691b71e14f4f47309513f0a2d50a625f43ba
         <Footer/>
       </div>
     );
