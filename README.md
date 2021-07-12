@@ -100,6 +100,9 @@ With the help of Chart.js, I was able to create what you see below.
 
 ![doughnut charts](https://user-images.githubusercontent.com/70716786/125314797-83783680-e304-11eb-96f3-7404bb6a9aac.PNG)
 
+A quick overview on how my components look in the console.
+![Components](https://user-images.githubusercontent.com/70716786/125315082-c5a17800-e304-11eb-94be-189ebacf7246.PNG)
+
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
