@@ -64,6 +64,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Packages to Install and Deployment
+    In order for myself to host website, I use GitHub pages since this application was built just using React. I ran into too many problems that I believe could be solved with more time and a tad of help that I couldn't host it on Heroku with Python Flask.
+
+
+    Please install the packages below to ensure that all the packages are present for deployment. Also when, cloned, the user can do an npm i to install all required packages.
+
     npm install react-bootstrap bootstrap@4.6.0
 
     npm install --save react-chartjs-2 chart.js
@@ -82,6 +87,9 @@ complete on time. This application needs about another week full of work to be f
 </p> 
 
 <p>In order to handle the responsiveness on any screen, Bootstrap was used. Bootstrap is a great CSS framework and I utilized simple components that were effective to demonstate a greeting and pictures about the University of Wisconsin-Madison. The footer was created by myself without any components from Bootstrap. Every web application should include a footer that has information about the topic at hand. I used props from React to handle the passing of information from my App.JS to my other components. I tried to use props and states as much as I can but I ran into a issue that would cause a problem on refresh. I believe this problem was caused because of the API being called constistenly. At first, I used a ComponentDidMount and a thought occured to me that this was the problem. In order to tackle this problem, I took the apporach of converting class components to functional Components and using a useEffect. However this did not solve the problem and for production, converted back to my orginal route.</p>
+
+
+<p>In order to get the Doughnut charts applied to the webpage, Charts.JS was utlized. THat way I had to populate these charts is suboptimal but for sake of deadline and production, the way I did works. I was able to use props and deconstruction to make the charts code/components very clean but on page refresh, would run into a prop issue thus having to do more hard coding since I couldn't obtain the API information consistently. On a certain commit, the user will see that I deconstructed the prop so I can call the object from the API with just the race ethnicity. I know of ways to use props and states to make the code DRY for the charts but issues occured. I spent hours trying to fix it to no avail. </p>
 
 ### Deployment
 
