@@ -13,18 +13,8 @@ class Body extends React.Component {
         
     }
 
-    // async componentDidMount() {
-    //     const url = `https://api.data.gov/ed/collegescorecard/v1/schools/?school.operating=1&id=240444&api_key=${process.env.REACT_APP_CLIENT_APIKEY}`
-    //     const response = await fetch(url);
-
-    //     const data = await response.json();
-    //     console.log(data)
-    //     this.setState({ school: data.results[0] })
-    // }
-
-
     render() {
-        // console.log('test')
+        // console.log(this.props.raceInfo.student)
         return (
 
         <div className='formatting'>
@@ -36,12 +26,14 @@ class Body extends React.Component {
                             There happens to be 26 programs listed for the Univeristy of Wisconsin-Madison University. In the Pie Chart above, it demonstates what portion of the student body size are 
                             in each program. The program that is the most popular in this University.
                         </p>
-                        {this.props.schoolInfo ? <p>{this.props.schoolInfo.latest.student.demographics.race_ethnicity.aian}</p> : <p> No School yet</p>}
+                        {/* {this.props.schoolInfo ? <p>{this.props.schoolInfo.latest.student.demographics.race_ethnicity.aian}</p> : <p> No School yet</p>} */}
 
 
                     </div>
                     <div className="column sm-4">
-                    <DoughnutChartRace raceInfo={this.props.raceInfo.student.demographics.race_ethnicity}/>
+                    <DoughnutChartRace 
+                    // chartInfo={this.props.schoolInfo.latest.student.demographics.race_ethnicity}
+                    />
                     <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
                     text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived 
@@ -58,7 +50,7 @@ class Body extends React.Component {
 
                     </div>
                     <div className="column sm-4">
-                    {/* <DoughnutChart/> */}
+                    
                     <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
                     text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived 
@@ -79,14 +71,14 @@ class Body extends React.Component {
 
             */}
 
-                    {/* <h4>Know your numbers!!</h4>   
+                    <h4>Know your numbers!!</h4>   
         
-                    {this.props.schoolInfo ? <p>{this.props.schoolInfo.name}</p> : <p> No School yet</p>}
-                    {this.props.schoolInfo ? <p>{this.props.schoolInfo.school_url}</p> : <p> No School Url</p>}
-                    {this.props.schoolInfo ? <p>{this.props.schoolInfo.city}, {this.props.schoolInfo.props}</p> : <p> No School City</p>}
+                    {this.props.schoolInfo ? <p>{this.props.schoolInfo.school.name}</p> : <p> No School yet</p>}
+                    {this.props.schoolInfo ? <p>{this.props.schoolInfo.latest.student.demographics.race_ethnicity.aian}</p> : <p> No School Url</p>}
+                    {/* {this.props.schoolInfo ? <p>{this.props.schoolInfo.city}, {this.props.schoolInfo.props}</p> : <p> No School City</p>}
                     {this.props.schoolInfo ? <p>{this.props.schoolInfo.zip}</p> : <p> No School Url</p>}
-                    {this.props.schoolInfo ? <p>{this.props.schoolInfo.size}</p> : <p>Student Size Loading</p>} */}
-                
+                    {this.props.schoolInfo ? <p>{this.props.schoolInfo.size}</p> : <p>Student Size Loading</p>}
+                 */}
             </div>
             {/* </div> */}
         </div>
