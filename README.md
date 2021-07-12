@@ -91,6 +91,12 @@ complete on time. This application needs about another week full of work to be f
 
 <p>In order to get the Doughnut charts applied to the webpage, Charts.JS was utlized. THat way I had to populate these charts is suboptimal but for sake of deadline and production, the way I did works. I was able to use props and deconstruction to make the charts code/components very clean but on page refresh, would run into a prop issue thus having to do more hard coding since I couldn't obtain the API information consistently. On a certain commit, the user will see that I deconstructed the prop so I can call the object from the API with just the race ethnicity. I know of ways to use props and states to make the code DRY for the charts but issues occured. I spent hours trying to fix it to no avail. </p>
 
+### Pictures/Demonstration
+
+Jumbotron I created with React Bootstrap components
+![project education](https://user-images.githubusercontent.com/70716786/125314625-5d529680-e304-11eb-8853-ecff22eceda8.PNG)
+
+
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
