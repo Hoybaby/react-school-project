@@ -1,4 +1,5 @@
 import React from 'react'
+import DoughnutChartCompletion from '../DoughnutChartCompletion/DoughnutChartCompletion';
 import DoughnutChartProgram from '../DoughnutChartProgram/DoughnutChart';
 import DoughnutChartRace from '../DoughnutChartRace/DoughnutChartRace';
 
@@ -8,17 +9,19 @@ import './Body.css'
 
 class Body extends React.Component {
 
-    constructor(props){
-        super(props);
+    // constructor(props){
+    //     super(props);
         
-    }
+    // }
 
     render() {
         // console.log(this.props.raceInfo.student)
+        // const {schoolInfo} = this.props
+        // console.log(schoolInfo.latest)
         return (
 
         <div className='formatting'>
-            <h4>The total student body size for these Doughnut graphs are {this.props.schoolInfo.latest.student.size} </h4>
+            <h4>The total student body size for these Doughnut graphs are 30,360 </h4>
             <div className="container">
                 <div className="row">
                     <div className="column sm-4">
@@ -37,24 +40,15 @@ class Body extends React.Component {
                     // chartInfo={this.props.schoolInfo.latest.student.demographics.race_ethnicity}
                     />
                     <p>
-                        Majority of the population according to the API provided by the goverment, is from a White ethnicity. 
+                        Majority of the population according to the API provided by the goverment, is from a White ethnicity. The school is located in the middle of the state which helps attracts all kinds of people.
                         </p>
 
 
                     </div>
                     <div className="column sm-4">
-                    
+                    <DoughnutChartCompletion/>
                     <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-                    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived 
-                    not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s 
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
-                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    Why do we use it? a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content 
-                    here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model 
-                    and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by 
-                    accident, sometimes on purpose (injected humour and the like).
+                            The above chart is only for 4,025 students in a cohort of a 4 year degree. This is the average split between males and females.
                         </p>
                     </div>
                 </div>
@@ -64,12 +58,10 @@ class Body extends React.Component {
 
             */}
 
-                    <h4>Know your numbers!!</h4>   
+                <h4>Know your numbers!!</h4>   
         
-                    {this.props.schoolInfo ? <p>{this.props.schoolInfo.school.name}</p> : <p> No School yet</p>}
-                    {this.props.schoolInfo ? <p>{this.props.schoolInfo.latest.student.demographics.race_ethnicity.aian}</p> : <p> No School Url</p>}
-                    {/* {this.props.schoolInfo ? <p>{this.props.schoolInfo.city}, {this.props.schoolInfo.props}</p> : <p> No School City</p>}
-                    {this.props.schoolInfo ? <p>{this.props.schoolInfo.zip}</p> : <p> No School Url</p>}
+                
+                    {/* {this.props.schoolInfo ? <p>{this.props.schoolInfo.school.zip}</p> : <p> No School Url</p>}
                     {this.props.schoolInfo ? <p>{this.props.schoolInfo.size}</p> : <p>Student Size Loading</p>}
                  */}
             </div>

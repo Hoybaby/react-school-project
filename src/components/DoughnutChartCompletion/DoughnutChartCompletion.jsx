@@ -7,10 +7,10 @@ function DoughnutChartCompletion() {
     
     const x = 30360;
     return <Doughnut data={{ 
-        labels: ['Aian', 'NHPI', 'Asian', 'Black', 'White', 'Unknown' ,'Hispanic'],
+        labels: ['Male', 'Female'],
         datasets: [{
-                data: [],
-                backgroundColor: ['red', 'green', 'orange', 'purple', 'cyan', "blue", "maroon", "yellow" ],
+                data: [1923, 2102],
+                backgroundColor: ['red', 'Blue'],
                 barThickness: 20
             }]
     }}/>
