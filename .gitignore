@@ -11,8 +11,12 @@
 # production
 /build
 
+*.pyc
+__pycache__/
+
 
 # misc
+venv/
 .env
 .DS_Store
 .env.local

@@ -1,7 +1,12 @@
 import React from 'react'
+import Example from '../ClassToPrint/ClassToPrint';
+
 import DoughnutChartCompletion from '../DoughnutChartCompletion/DoughnutChartCompletion';
 import DoughnutChartProgram from '../DoughnutChartProgram/DoughnutChart';
 import DoughnutChartRace from '../DoughnutChartRace/DoughnutChartRace';
+// import ReactToPrint from 'react-to-print';
+
+
 
 
 import './Body.css'
@@ -19,9 +24,10 @@ class Body extends React.Component {
         // const {schoolInfo} = this.props
         // console.log(schoolInfo.latest)
         return (
-
+            
         <div className='formatting'>
             <h4>The total student body size for these Doughnut graphs are 30,360 </h4>
+            {/* <Example/> */}
             <div className="container">
                 <div className="row">
                     <div className="column sm-4">

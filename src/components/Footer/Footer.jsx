@@ -11,8 +11,9 @@ class Footer extends React.Component {
                     <div className="col">
                         <h4>School Information</h4>
                         <ul className='list-unstyled'>
+                        {this.props.schoolInfo ? <li>Madison, {this.props.schoolInfo.school.state} </li> : <li> No School Url</li>}
                         {this.props.schoolInfo ? <li>{this.props.schoolInfo.school.school_url} </li> : <li> No School Url</li>}
-                            {this.props.schoolInfo ? <li>{this.props.schoolInfo.school.zip} </li> : <li> No School Url</li>}
+                        {this.props.schoolInfo ? <li>{this.props.schoolInfo.school.zip} </li> : <li> No School Url</li>}
                             <li>(608) 263-2400</li>
                         </ul>    
                     </div>
