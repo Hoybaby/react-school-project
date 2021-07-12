@@ -35,12 +35,7 @@ class App extends React.Component {
       <div className="App">
         <Jumbo/>
         <Slides/>
-<<<<<<< HEAD
-        <DoughnutChart/>
-        <Body/>
-=======
         <Body schoolInfo={this.state.school.school}/>
->>>>>>> a28e691b71e14f4f47309513f0a2d50a625f43ba
         <Footer/>
       </div>
     );
