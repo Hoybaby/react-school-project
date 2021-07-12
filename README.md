@@ -96,6 +96,9 @@ complete on time. This application needs about another week full of work to be f
 Jumbotron I created with React Bootstrap components
 ![project education](https://user-images.githubusercontent.com/70716786/125314625-5d529680-e304-11eb-8853-ecff22eceda8.PNG)
 
+With the help of Chart.js, I was able to create what you see below.
+
+![doughnut charts](https://user-images.githubusercontent.com/70716786/125314797-83783680-e304-11eb-96f3-7404bb6a9aac.PNG)
 
 ### Deployment
 
