@@ -58,7 +58,7 @@ class Body extends React.Component {
 
             */}
 
-                <h4>Know your numbers!!</h4>   
+                {/* <h4>Know your numbers!!</h4>    */}
         
                 
                     {/* {this.props.schoolInfo ? <p>{this.props.schoolInfo.school.zip}</p> : <p> No School Url</p>}

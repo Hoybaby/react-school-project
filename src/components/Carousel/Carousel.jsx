@@ -16,7 +16,7 @@ class Slides extends React.Component {
                             alt="First slide, Ariel View"
                         />
                         <Carousel.Caption>
-                            <h3 className='slide-color'>Ariel View of the campus  </h3>
+                            <h3 className='slide-color'>Arial View of the Campus  </h3>
                             {/* <p className='slide-color'>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -27,7 +27,7 @@ class Slides extends React.Component {
                             alt="Second slide"
                         />
                         <Carousel.Caption>
-                            <h3 className='slide-color'>Second slide label</h3>
+                            <h3 className='slide-color'>Bascom Hall</h3>
                             {/* <p className='slide-color'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
                         </Carousel.Caption>
                     </Carousel.Item>
