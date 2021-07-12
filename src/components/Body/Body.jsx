@@ -1,6 +1,8 @@
 import React from 'react'
 import DoughnutChartProgram from '../DoughnutChartProgram/DoughnutChart';
-import DoughnutChart from '../DoughnutChartProgram/DoughnutChart';
+import DoughnutChartRace from '../DoughnutChartRace/DoughnutChartRace';
+
+
 import './Body.css'
 
 
@@ -29,16 +31,17 @@ class Body extends React.Component {
             <div className="container">
                 <div className="row">
                     <div className="column sm-4">
-                        <DoughnutChartProgram/>
+                        <DoughnutChartProgram />
                         <p>
                             There happens to be 26 programs listed for the Univeristy of Wisconsin-Madison University. In the Pie Chart above, it demonstates what portion of the student body size are 
-                            in each program. The program that is the most popular in this University
+                            in each program. The program that is the most popular in this University.
                         </p>
+                        {this.props.schoolInfo ? <p>{this.props.schoolInfo.latest.student.demographics.race_ethnicity.aian}</p> : <p> No School yet</p>}
 
 
                     </div>
                     <div className="column sm-4">
-                    {/* <DoughnutChart/> */}
+                    <DoughnutChartRace raceInfo={this.props.raceInfo.student.demographics.race_ethnicity}/>
                     <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
                     text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived 

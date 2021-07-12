@@ -35,7 +35,7 @@ class App extends React.Component {
       <div className="App">
         <Jumbo/>
         <Slides/>
-        <Body schoolInfo={this.state.school.school}/>
+        <Body schoolInfo={this.state.school} raceInfo={this.state.school.latest}/>
         <Footer/>
       </div>
     );
