@@ -6,7 +6,7 @@ import Jumbo from './components/Jumbotron/Jumbotron';
 import Footer from './components/Footer/Footer';
 import Slides from './components/Carousel/Carousel';
 import Body from './components/Body/Body';
-import DoughnutChart from './components/DoughnutChart/DoughnutChart';
+import DoughnutChart from './components/DoughnutChartProgram/DoughnutChart';
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 

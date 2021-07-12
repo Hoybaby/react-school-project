@@ -10,8 +10,8 @@ class Jumbo extends React.Component {
             <div>
                 <Jumbotron fluid className="jumbo-background">
                     <Container fluid>
-                        <h1 className="display-3"><img src="https://brand.wisc.edu/content/uploads/2016/10/different-logo-300x200.png"></img>Univeristy of Wisconsin-Madison</h1>
-                        <p className="lead">Below you will find some information and statistics about this specific University</p>
+                        <h1 className="display-3"><img src="https://brand.wisc.edu/content/uploads/2016/10/different-logo-300x200.png"></img>University of Wisconsin-Madison</h1>
+                        <p className="lead">Below you will find some information and statistics which can help you make some important decisions</p>
                     </Container>
                 </Jumbotron>
             </div>
