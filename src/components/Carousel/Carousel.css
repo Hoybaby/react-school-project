@@ -2,7 +2,7 @@
 @media screen and (min-width: 992px ){
     .carousel {
     width:900px; 
-    height:500px;
+    height:auto;
     margin: auto;
     }
 }

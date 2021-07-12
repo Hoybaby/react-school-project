@@ -11,7 +11,20 @@ import Body from './components/Body/Body';
 
 
 class App extends React.Component {
+
+  state = {
+    // loading: true,
+        school: ''
+    }
   
+  async componentDidMount() {
+    const url = `https://api.data.gov/ed/collegescorecard/v1/schools/?school.operating=1&id=240444&api_key=${process.env.REACT_APP_CLIENT_APIKEY}`
+    const response = await fetch(url);
+
+    const data = await response.json();
+    console.log(data)
+    this.setState({ school: data.results[0] })
+}
 
 
   render() {
@@ -21,7 +34,7 @@ class App extends React.Component {
       <div className="App">
         <Jumbo/>
         <Slides/>
-        <Body/>
+        <Body schoolInfo={this.state.school.school}/>
         <Footer/>
       </div>
     );
