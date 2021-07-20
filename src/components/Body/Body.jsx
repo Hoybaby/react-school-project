@@ -65,8 +65,8 @@ const Body = ({}) => {
                 {/* <h4>Know your numbers!!</h4>    */}
         
                 
-                    {this.props.schoolInfo ? <p>{this.props.schoolInfo.school.zip}</p> : <p> No School Url</p>}
-                    {this.props.schoolInfo ? <p>{this.props.schoolInfo.size}</p> : <p>Student Size Loading</p>}
+                    {/* {this.props.schoolInfo ? <p>{this.props.schoolInfo.school.zip}</p> : <p> No School Url</p>}
+                    {this.props.schoolInfo ? <p>{this.props.schoolInfo.size}</p> : <p>Student Size Loading</p>} */}
                 
             </div>
             {/* </div> */}

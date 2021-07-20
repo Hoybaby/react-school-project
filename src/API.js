@@ -9,7 +9,7 @@ export const useDataFetch = () => {
     
 
     
-    const [state, setState] = useState(initialState);
+    const [state, setState] = useState('');
 
     // const [loading, setLoading] = useState(false);
 

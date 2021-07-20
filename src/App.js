@@ -81,8 +81,8 @@ const App = () => {
     <div className="App">
         <Jumbo />
         <Slides />
-        {/* <Body schoolInfo={this.state.school} /> */}
-        {/* <Footer schoolInfo={this.state.school} /> */}
+        <Body schoolInfo={state.school} />
+        <Footer schoolInfo={state.school} />
       </div>
   )
 }
