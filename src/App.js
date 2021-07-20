@@ -8,6 +8,12 @@ import Slides from './components/Carousel/Carousel';
 import Body from './components/Body/Body';
 import DoughnutChart from './components/DoughnutChartProgram/DoughnutChart';
 
+
+// API information possible
+import API from './API';
+
+import {useDataFetch} from './API'
+
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 // const App = () => {
@@ -35,41 +41,80 @@ import DoughnutChart from './components/DoughnutChartProgram/DoughnutChart';
 //   );
 // }
 
-class App extends React.Component {
+const App = () => {
+  
+  
+  // const initialState = {
+  //   results: []
+  // }
 
-  state = {
-    // loading: true,
-    school: null
-  }
+  
+  // const [state, setState] = useState(initialState);
 
-
-
-
-  async componentDidMount() {
-
-      
-    const url = `https://api.data.gov/ed/collegescorecard/v1/schools/?school.operating=1&id=240444&api_key=${process.env.REACT_APP_CLIENT_APIKEY}`
-    const response = await fetch(url);
-
-    const data = await response.json();
-    console.log(data)
-    this.setState({ school: data.results[0] })
-  }
+  // const [loading, setLoading] = useState(false);
 
 
-  render() {
-    // console.log('test')
-    return (
+  // const useDataRender = () => {
 
-      <div className="App">
+  //     const fetchData = () => {
+  //     const url = `https://api.data.gov/ed/collegescorecard/v1/schools/?school.operating=1&id=240444&api_key=${process.env.REACT_APP_CLIENT_APIKEY}`
+  //     const response = fetch(url);
+
+  //     const data = response.json()
+  //     console.log(data)
+  //     setState({school: data.results[0]})
+
+  // }
+
+    const {state} = useDataFetch();
+    console.log(state)
+
+
+  // useEffect( async()=> {
+  //     const response = await fetch(`https://api.data.gov/ed/collegescorecard/v1/schools/?school.operating=1&id=240444&api_key=${process.env.REACT_APP_CLIENT_APIKEY}`)
+  //     const data = await response.json()
+  //     setState({school: data.results[0]})
+  // },[])
+
+  console.log(state)
+  return (
+    <div className="App">
         <Jumbo />
         <Slides />
-        <Body schoolInfo={this.state.school} />
-        <Footer schoolInfo={this.state.school} />
+        {/* <Body schoolInfo={this.state.school} /> */}
+        {/* <Footer schoolInfo={this.state.school} /> */}
       </div>
-    );
-  }
+  )
 }
+
+
+
+
+  // async componentDidMount() {
+
+      
+  //   const url = `https://api.data.gov/ed/collegescorecard/v1/schools/?school.operating=1&id=240444&api_key=${process.env.REACT_APP_CLIENT_APIKEY}`
+  //   const response = await fetch(url);
+
+  //   const data = await response.json();
+  //   console.log(data)
+  //   this.setState({ school: data.results[0] })
+  // }
+
+
+//   render() {
+//     // console.log('test')
+//     return (
+
+//       <div className="App">
+//         <Jumbo />
+//         <Slides />
+//         <Body schoolInfo={this.state.school} />
+//         <Footer schoolInfo={this.state.school} />
+//       </div>
+//     );
+//   }
+// }
 
 
 

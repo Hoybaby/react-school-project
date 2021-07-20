@@ -12,14 +12,12 @@ import DoughnutChartRace from '../DoughnutChartRace/DoughnutChartRace';
 import './Body.css'
 
 
-class Body extends React.Component {
+const Body = ({}) => {
 
     // constructor(props){
     //     super(props);
         
     // }
-
-    render() {
         // console.log(this.props.raceInfo.student)
         // const {schoolInfo} = this.props
         // console.log(schoolInfo.latest)
@@ -67,15 +65,15 @@ class Body extends React.Component {
                 {/* <h4>Know your numbers!!</h4>    */}
         
                 
-                    {/* {this.props.schoolInfo ? <p>{this.props.schoolInfo.school.zip}</p> : <p> No School Url</p>}
+                    {this.props.schoolInfo ? <p>{this.props.schoolInfo.school.zip}</p> : <p> No School Url</p>}
                     {this.props.schoolInfo ? <p>{this.props.schoolInfo.size}</p> : <p>Student Size Loading</p>}
-                 */}
+                
             </div>
             {/* </div> */}
         </div>
         );
     }
-}
+
 
 
 
