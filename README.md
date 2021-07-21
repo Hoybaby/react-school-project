@@ -105,6 +105,21 @@ A quick overview on how my components look in the console.
 
 ![Components](https://user-images.githubusercontent.com/70716786/125315082-c5a17800-e304-11eb-94be-189ebacf7246.PNG)
 
+### API Usage
+
+<p>The API that was used for this application is from Data.Gov and to obtain a key, please go to this link : https://api.data.gov/signup/.</p>
+
+<p> The API key will come via email will have which will be used with a valid API call. The valid API call that is used to ensure that information gets passed into the console is : https://api.data.gov/ed/collegescorecard/v1/schools/?school.operating=1&id=240444&api_key= . When working with API's in GitHub, it is best practice to hide your key so others can not acces this key. In order to hide your key, please create a .env file in the domain of your application AND place .env in your .gitignore. This will allow the .env to be hidden on GitHub so other's cant access it. You want to place it like the picture below</p>
+
+![image](https://user-images.githubusercontent.com/70716786/126562031-e5282546-bf0d-45f4-8279-0d670e8b1575.png)
+
+<p>In order to call your key properly, you must place it in your fetch call like the picture below.</p>
+
+![image](https://user-images.githubusercontent.com/70716786/126562182-e9c3cadd-07d5-411e-993e-f8b0c158fb91.png)
+
+
+
+
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
