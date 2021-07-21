@@ -5,6 +5,7 @@ import DoughnutChartCompletion from '../DoughnutChartCompletion/DoughnutChartCom
 import DoughnutChartProgram from '../DoughnutChartProgram/DoughnutChart';
 import DoughnutChartRace from '../DoughnutChartRace/DoughnutChartRace';
 // import ReactToPrint from 'react-to-print';
+import {useDataFetch} from '../../API'
 
 
 
@@ -12,8 +13,9 @@ import DoughnutChartRace from '../DoughnutChartRace/DoughnutChartRace';
 import './Body.css'
 
 
-const Body = ({}) => {
+const Body = () => {
 
+    // const {state} = useDataFetch();
     // constructor(props){
     //     super(props);
         
@@ -21,6 +23,8 @@ const Body = ({}) => {
         // console.log(this.props.raceInfo.student)
         // const {schoolInfo} = this.props
         // console.log(schoolInfo.latest)
+        // console.log(schoolInfo)
+        // console.log(state)
         return (
             
         <div className='formatting'>
@@ -29,8 +33,8 @@ const Body = ({}) => {
             <div className="container">
                 <div className="row">
                     <div className="column sm-4">
-                        
-                        <DoughnutChartProgram />
+                    {/* .school.latest.student.demographics.race_ethnicity} */}
+                        <DoughnutChartProgram />                        
                         <p>
                             There happens to be 26 programs listed for the Univeristy of Wisconsin-Madison University. In the Pie Chart above, it demonstates what portion of the student body size are 
                             in each program. The program that is the most popular in this University.
@@ -54,6 +58,7 @@ const Body = ({}) => {
                     <p>
                             The above chart is only for 4,025 students in a cohort of a 4 year degree. This is the average split between males and females.
                         </p>
+                        {/* {this.props.schoolInfo ? <p>{this.props.schoolInfo.school.school_url} </p> : <p> No School Url</p>} */}
                     </div>
                 </div>
             {/* prenotes to do

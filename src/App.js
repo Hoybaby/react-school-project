@@ -20,8 +20,10 @@ const App = () => {
   
     const {state} = useDataFetch();
     console.log(state)
+    // console.log('---------------')
+    // console.log(state.school.school.locale)
 
-  console.log(state)
+  // console.log(state)
   return (
     <div className="App">
         <Jumbo />
